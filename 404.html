@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>404!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@700&display=swap');
+        
+        body{
+           background-color: antiquewhite;
+            font-family: 'Sofia Sans Extra Condensed', sans-serif;
+            overflow-y: scroll;
+        }
+        
+        #holymoly {
+            font-size: 80px;
+        }
+        
+        #homeButt {
+            position: absolute;
+            left: 50%;
+            user-select: none;
+            transform: translateX(-50%);
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            color: black;
+            background-color: white;
+            border-width: medium;
+            border-color: black;
+            border-style: solid;
+        }
+        
+        .flexbox {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #container {
+            text-align: center;
+        }
+        
+        #meme {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            user-select: none;
+            transition: 1s ease-in-out;
+            z-index: -1;
+          
+        }
+        
+        @media (max-height: 745px) and (max-width: 675px) {
+            #meme {
+                bottom: -15%;
+                opacity: 0.5;
+            }
+            
+        }
+        
+        @media (max-height: 620px) {
+            #meme {
+                bottom: -15%;
+                opacity: 0.5;
+            }
+        }
+    
+    </style>
+    <link rel="icon" href="icon.png" type="image/png">
+  </head>
+  <body>
+  <div class="flexbox">
+   <div id="container">
+    <h1 id="holymoly">Holy S@#$!</h1>
+    <p style="font-family: serif; font-size: 30px;">This page doesn't exist, buddy. Head back to the homeland.</p>
+       <a href="https://www.lanecrowder.com"><div id="homeButt"><h2>Go Home</h2></div></a>
+       <img id="meme" draggable="false"  oncontextmenu="return false;" src="meme.png">
+    </div>
+    </div>
+  </body>
+</html>

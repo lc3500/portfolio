@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: darkslategrey">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lane Crowder – Computer Engineer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+  </head>
+  <body style="background-color: darkslategrey">
+   <div id="loading">
+           <div id="loadingGif"></div>
+       </div>
+    <header>
+     <div id="cursorBox"></div>
+      <div id="headerContainer">
+       <div id="homeButton"><h2><span style="color: darkslategrey;">LANE</span><span style="color: darkorange;">CROWDER</span></h2></div>
+       <div id="links">
+        <ul id="cursorReference">
+            <li class="resumeLink link"><p>Résumé</p></li>
+            <li class="programsLink link" ><p>Programs</p></li>
+            <li class="makingLink link"><p>How was this site made?</p></li>
+        </ul>
+        </div>
+        </div>
+        
+        <div id="mobileButton">
+            <div id="mobileWrapper">
+                <div class="top"></div>
+                <div class="middle"></div>
+                <div class="bottom"></div>
+             </div>
+        </div>  
+    </header>
+    <div id="mobileMenu" class="hide">
+          <ul>
+              <li class="resumeLink mobileLink link"><p>Résumé</p></li>
+              <li class="programsLink mobileLink link"><p>Programs</p></li>
+              <li class="makingLink mobileLink link"><p>How was this site made?</p></li>
+          </ul>
+
+      </div>
+    <main>
+     <div id="pdfWindow" class="hide">
+            <div id="pdfWinX" draggable="false" class="xIcon">&#x2715</div>
+            <div id="pdfContainer">
+                <img src="resume.png">
+            </div>
+            <div id="pdfZoom">
+                <div id="pdfMinus">-</div>
+                <div id="pdfPlus">+</div>
+            </div>
+        </div>
+
+        <div id="mainPhotoWrapper">
+            <div id="mainPhoto">
+               <div id="mainPhotoContent">
+                <div id="mainPhotoTextDiv">
+                    <h1 class="bracket">&#60</h1><h1 id="mainPhotoText"><span class="autoType"></span></h1><h1 class="bracket">&#62</h1>
+                </div>
+                <div id="cutout"></div>
+                </div>
+                <div id="scrollDown"><p id="scrollText">Scroll</p><p id="scrollArrow">↓</p></div>
+            </div>
+        </div>
+        <div id="contentWrapper">
+        <div id="content" class="bgNormal">
+          <div id="iam">
+              <h2><span style="color: white;">I am... </span><span class="autoType2" style="color: darkorange"></span></h2>
+          </div>
+           <div id="mainContainer">
+            <div id="leftContent">
+                <div class="column">
+                    <div class="row" id="leftTopPic"></div>
+                    <div class="row" id="leftBottomPic"></div>
+                </div>
+            </div>
+            <div id="middleContent">
+                
+            </div>
+            <div id="rightContent">
+                <div class="column">
+                    <div class="row" id="rightTopPic"></div>
+                    <div class="row" id="rightBottomPic"></div>
+                </div>
+            </div>
+            </div>
+          <div id="resume">
+              <div id="resumeTitle"><h2>Résumé</h2><div class="line"></div></div>
+              <div id="resumeContent">
+                 <div id="pdfButton">View PDF</div>
+              </div>
+              
+          </div> 
+          <div id="programs">
+              <div id="programsTitle"><h2>Projects</h2><div class="line"></div></div>
+             <div id="programsContent">
+              <div id="c">
+                  <div class="programHeader cHeader" draggable="false"><h3>C Programs</h3><div class="carrow arrow"><p>&darr;</p></div></div>
+                  <div id="cContent" class="programList retract"></div>
+              </div>
+              
+              <div id="python">
+                  <div class="programHeader pyHeader" draggable="false"><h3>Python Programs</h3><div class="pyarrow arrow"><p>&darr;</p></div>
+                  </div><div id="pyContent" class="programList retract"></div>
+              </div>
+              
+            </div>  
+          </div>
+          <div id="howMade">
+              <h1 id="howMadeTitle">How was this <br> site made??</h1>
+              <div class="howMadePic first"></div>
+              <div class="howMadePic second"></div>
+              <div id="howMadeText">
+                  <h2>
+                      Wanna know how this site was made? Using a combination of jQuery, PHP, SQL, HTML, and CSS, this site is possible! A fully functioning webapp, projects can be modified without specifically coding it in, but rather in filling out a form on an admin page at <p style="margin: 0; padding: 0; color: darkorange;">www.lanecrowder.com/admin.</p>The site showcases some of my skills with full-stack web development. Feel free to check out the GitHub repository below to further look into how the site was made. Have fun!
+                  </h2>
+                  <a href="https://github.com/lc3500/portfolio" target="_blank" style="text-decoration: none; color: white;"><div id="howMadeGitButt">
+                      <img src="GitHub-Mark.png" draggable="false">
+                      <h2>GitHub</h2>
+                      </div></a>
+              </div>
+              <div class="howMadePic third"></div>
+              <div class="howMadePic fourth"></div>
+          </div>
+          
+        </div>
+        </div>
+        
+         <footer>
+              <div id="socials">
+                  <h1>Social Links</h1>
+              </div>
+              <a href="https://www.lanecrowder.com/login" target="_blank"><div id="adminLogin">Admin Login</div></a>
+          </footer>
+          
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script src="script.js"></script>
+   <script src="linkFunctions.js"></script>
+  
+   
+  </body>
+</html>
